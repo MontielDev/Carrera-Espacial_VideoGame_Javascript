@@ -244,7 +244,7 @@ function moveLeft() {
 
 function moveRight() {
     console.log('derecha');
-    if ((playerPosition.x + elementSize) > canvasSize) {
+    if (playerPosition.x >= canvasSize) {
         console.log('out');
     }
     else { 
