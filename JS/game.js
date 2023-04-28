@@ -202,7 +202,7 @@ function showTime() {
 }
 
 function showRecord() {
-    spanRecord.innerHTML = localStorage.getItem('record_time');
+    spanRecord.innerHTML = formatTime(localStorage.getItem('record_time'));
 }
 
 

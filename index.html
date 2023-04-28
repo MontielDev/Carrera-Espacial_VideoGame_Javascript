@@ -10,21 +10,21 @@
 
 <body>
     <div class="game-container">
-        <canvas id="game"></canvas>
-
-        <div class="btns">
-            <button id="up">arriba</button>
-            <button id="left">izquierda</button>
-            <button id="right">derecha</button>
-            <button id="down">abajo</button>
-        </div>
-
         <div class="messages">
             <p>Vidas: <span id="lives"></span></p>
             <p>Tiempo: ⏱️ <span id="time"></span></p>
             <p>Record: 🏁 <span id="record"></span></p>
             <p id="result"></p>
         </div>
+        <canvas id="game"></canvas>
+
+        <div class="btns">
+            <img src="./IMG/flecha.png" alt="flecha-arriba" id="up">
+            <img src="./img/flecha.png" alt="flecha-abajo"id="down">
+            <img src="./img/flecha.png" alt="flecha-derecha" id="right">
+            <img src="./img/flecha.png" alt="flecha-izquierda" id="left">
+        </div>
+
     </div>
 
     <script src="./JS/maps.js"></script>
