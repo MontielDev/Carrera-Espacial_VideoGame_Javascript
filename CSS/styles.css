@@ -33,7 +33,6 @@ canvas {
 
 .btns img {
     margin: 0 20px;
-    justify-content: center;
 }
 
 .btns img:nth-child(2) {
