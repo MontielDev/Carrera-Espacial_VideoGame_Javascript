@@ -46,7 +46,7 @@ canvas {
 #up {
     transform: rotate(180deg);
     width: 100vw;
-    height: 100px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -57,7 +57,7 @@ canvas {
 #left {
     transform: rotate(90deg);
     width: 100px;
-    height: 100px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -68,7 +68,7 @@ canvas {
 #right {
     transform: rotate(270deg);
     width: 100px;
-    height: 100px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -78,7 +78,7 @@ canvas {
 
 #down {
     width: 100vw;
-    height: 100px;
+    height: 70px;
     object-fit: contain;
 }
 
