@@ -37,9 +37,9 @@ let enemyPositions = [];
 
 function setCanvasSize(){
     if(window.innerHeight > window.innerWidth) {
-        canvasSize = window.innerWidth * 0.8;
+        canvasSize = window.innerWidth * 0.5;
     } else {
-        canvasSize = window.innerHeight * 0.8;
+        canvasSize = window.innerHeight * 0.5;
     }
     
     canvas.setAttribute('width', canvasSize);
