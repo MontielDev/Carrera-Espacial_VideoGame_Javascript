@@ -127,6 +127,7 @@ canvas {
     #right,
     #down
     {
+        height: 70px;
         object-fit: contain;
     }
     .messages p:nth-child(4) {
