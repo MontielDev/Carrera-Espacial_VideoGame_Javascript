@@ -1,5 +1,5 @@
 body {
-    background-color: #133ea4;
+    background-color: #151718;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     margin: 0;
@@ -11,14 +11,18 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100%;
     max-width: 100vw;
+    overflow: hidden;
 }
 
 canvas {
-    border: 4px solid #2c2c2d;
+    border: 4px solid #161717;
+    padding: 5px;
     border-radius: 8px;
-    background-color: #feff9d;
+    background-image: url(../IMG/space.avif);
+    width: 680px;
+    margin: 5px;
 }
 
 .btns {
@@ -26,7 +30,8 @@ canvas {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    width: 100vw;
+    height: auto;
+    display: none;
 }
 
 
@@ -77,6 +82,7 @@ canvas {
 }
 
 #down {
+    display: flex;
     width: 100vw;
     height: 70px;
     object-fit: contain;
@@ -117,7 +123,18 @@ canvas {
     text-align: center;
 }
 
-
+@media (max-width: 768px) {
+    .messages p {
+        height: auto;
+        padding: 10px;
+    }
+    .btns {
+        display: flex;
+    }
+    canvas {
+        width: 450px;
+    }
+}
 
 
 @media (max-width: 440px) {
@@ -127,11 +144,7 @@ canvas {
     #right,
     #down
     {
-        height: 70px;
         object-fit: contain;
-    }
-    .messages p:nth-child(4) {
-        margin-top: 10px;
     }
 }
 
@@ -154,88 +167,3 @@ canvas {
         padding-bottom: 50px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    background-color: rgb(23, 64, 145);
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.game-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    width: 100vw;
-}
-
-canvas {
-    border: 4px solid #2c2c2d;
-    border-radius: 8px;
-    background-color: #feff9d;
-}
-
-.btns {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-}
-
-button {
-    background-color: #fdef05;
-    border-radius: 8px;
-    border-color: #2c2c2d;
-    font-family: inherit;
-    margin: 0;
-    padding: 5px 20px;
-    width: 100px;
-}
-
-button:not(:last-child) {
-    margin-right: 10px;
-}
-
-.messages {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 460px;
-}
-
-p {
-    display: block;
-    margin: 0;
-    width: 100%;
-}
-
-@media (max-width: 440px) {
-    button {
-        margin-top: 25px;
-    }
-
-    #up,
-    #down {
-        margin-left: 100%;
-        margin-right: 100%;
-    }
-} */

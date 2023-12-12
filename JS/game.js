@@ -42,8 +42,8 @@ function setCanvasSize(){
         canvasSize = window.innerHeight * 0.8;
     }
     
-    canvas.setAttribute('width', canvasSize);
-    canvas.setAttribute('height', canvasSize);
+    canvas.setAttribute('width', canvasSize + 5);
+    canvas.setAttribute('height', canvasSize + 5);
     
     elementSize = canvasSize / 10;
     
@@ -85,7 +85,7 @@ function startGame(){
     mapRowCols.forEach((row, rowI) => {
         row.forEach((col, colI) => {
             const emoji = emojis[col];
-            const posX = elementSize * (colI + 1);
+            const posX = elementSize * (colI + 1) + 10;
             const posY = elementSize * (rowI + 1) - 10;
 
             if (col == 'O') {
@@ -263,32 +263,3 @@ function moveDown() {
         startGame();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// HERRAMIENTAS UTILES
-    // window.innerHeight
-    // window.innerWidth
-    
-    // game.fillRect(0,0,100,100);
-    // game.clearRect(0,0,50,50);
-    // game.clearRect();
-    // game.clearRect(0, 0, 50, 50);
-
-    // game.font = '25px Verdana';
-    // game.fillStyle = 'purple';
-    // game.textAlign = 'center';
-    // game.fillText('platzi', 50, 50);
