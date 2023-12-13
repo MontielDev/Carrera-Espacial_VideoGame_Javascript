@@ -42,7 +42,7 @@ function setCanvasSize(){
         canvasSize = window.innerHeight * 0.8;
     }
     
-    canvas.setAttribute('width', canvasSize + 5);
+    canvas.setAttribute('width', canvasSize + 10);
     canvas.setAttribute('height', canvasSize + 5);
     
     elementSize = canvasSize / 10;
