@@ -42,7 +42,7 @@ function setCanvasSize(){
         canvasSize = window.innerHeight * 0.8;
     }
     
-    canvas.setAttribute('width', canvasSize + 10);
+    canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize + 5);
     
     elementSize = canvasSize / 10;
@@ -85,7 +85,7 @@ function startGame(){
     mapRowCols.forEach((row, rowI) => {
         row.forEach((col, colI) => {
             const emoji = emojis[col];
-            const posX = elementSize * (colI + 1) + 10;
+            const posX = elementSize * (colI + 1);
             const posY = elementSize * (rowI + 1) - 10;
 
             if (col == 'O') {
