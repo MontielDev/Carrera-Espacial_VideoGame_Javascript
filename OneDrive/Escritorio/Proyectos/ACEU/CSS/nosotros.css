@@ -1,0 +1,130 @@
+:root {
+    --blanco: #fff;
+    --blanco2: #e5e5e5;
+    --blanco3: #bebebe;
+    --negro: #000;
+    --azul-Oscuro: #0a141d;
+    --azul-oscuro2: #0d2033;
+    --aqua: rgb(38, 172, 172);
+}
+
+.contenido1 {
+    display: flex;
+    min-height: 100vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(/media/fondos/fondo2.jpg);
+    background-attachment: fixed;
+}
+
+.contenido1 .container {
+    display: flex;
+    width: 100vw;
+    padding: 100px 100px 50px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido1 .nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contenido1 .title {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    border-radius: 80px 10px;
+    background-color: rgba(0, 0, 0, 0.674);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+}
+
+.contenido1 h1 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--blanco);
+    font-size: 20px;
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    box-shadow: 2px 2px 2px 2px rgba(1, 1, 1, 0.1);
+}
+
+.contenido1 p {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    color: var(--blanco);
+    text-align: justify;
+    letter-spacing: 0.2px;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.cv {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.674);
+    border-radius: 80px 10px;
+    padding: 10px 80px;
+    border: 1px solid rgba(23, 66, 108, 0.085);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+    margin-bottom: 50px;
+}
+
+.cv button {
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.cv button a {
+    color: var(--blanco);
+}
+
+.cv button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--aqua);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover .overlay {
+    width: 100%;
+    color: var(--blanco);
+}
+
+.cv button a:hover {
+    color: var(--blanco);
+}
+
+@media(max-width:824px) {
+
+    nav {
+        display: flex;
+    }
+}

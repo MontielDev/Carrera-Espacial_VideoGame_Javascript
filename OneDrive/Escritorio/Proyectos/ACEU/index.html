@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACEU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/media/images/logo/logo-aceu.jpeg">
+    <script src="https://kit.fontawesome.com/6336de6401.js" crossorigin="anonymous"></script>
+    <script src="JS/jquery-3.6.4.js"></script>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+ 
+    <div class="contenedor-header">
+        <header>
+            <section class="menu__container">
+                <a class="desplazar" href="#inicio" onclick="seleccionar()"><img class="logo" src="/media/images/logo/logo-aceu.jpeg" alt="logo"></a>
+
+                <nav id="nav">
+                    <section class="menu__container">
+
+                        <ul class="menu__links">
+
+                            <li><a class="desplazar a" href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                            <li><a class="desplazar a" href="#galery" onclick="seleccionar()">Galeria</a></li>
+
+                            <li class="menu__item menu__item--show">
+
+                                <strong>Secretarias</strong><img src="assets/arrow.svg" class="menu__arrow"> 
+
+                                <ul class="menu__nesting">
+                                    <li class="menu__inside">
+                                        <a href="/HTML/secretaria1.html" class="menu__link menu__link--inside" onclick="seleccionar()">Secretaria de ....</a>
+                                    </li>
+                                    <li class="menu__inside">
+                                        <a href="/HTML/secretaria2.html" class="menu__link menu__link--inside" onclick="seleccionar()">Secretaria de ....</a>
+                                    </li>
+                                    <li class="menu__inside">
+                                        <a href="/HTML/secretaria3.html" class="menu__link menu__link--inside" onclick="seleccionar()">Secretaria de ....</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu__item  menu__item--show">
+                                <strong>Reformas</strong><img src="assets/arrow.svg" class="menu__arrow">
+                
+                                <ul class="menu__nesting">
+                                    <li class="menu__inside">
+                                        <a href="/HTML/observatorio.html" class="menu__link menu__link--inside" onclick="seleccionar()">Observatorio de políticas de educación superior de colombia</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a class="a" href="/HTML/nosotros.html">Nosotros</a></li>
+                            <li><a class="desplazar a" href="#redes" onclick="seleccionar()">Siguenos</a></li>
+                        
+                        </ul>
+                </section>
+                </nav>
+            </section>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+        <!-- contenido-pagina -->
+
+
+            <div class="contenido1-slide sections" id="inicio">
+
+                    <h1 class="title1">Noticias</h1>
+
+                <div class="slider1">
+
+                    <h1>Noticias</h1>
+                    <div class="slides">
+
+                            
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="media/images/black.jpg" alt="">                            
+                        </div>
+                        <div class="slide">
+                            <img src="media/images/blackboard.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="media/images/paper.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="media/images/wall.jpg" alt="">
+                        </div>  
+                        <div class="slide">
+                            <img src="media/images/wall.jpg" alt="">
+                        </div>                     
+                    </div>
+                    
+                        <div class="nav-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>   
+                </div>
+
+                <div class="title">
+                    <div class="div-title">
+                        <!-- <h1>ACEU<hr></h1> -->
+                        <div class="title-video">
+                                <h1>titulo video</h1>
+                            <video width="550" height="230" controls> 
+                                <source src="/" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="title-video">
+                                <h1>titulo video</h1>
+                            <video width="550" height="230" controls>
+                                <source src="/" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="title-video">
+                                <h1>titulo video</h1>
+                            <video width="550" height="230" controls>
+                                <source src="/" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div class="contenido2-galery sections" id="galery">
+                
+                <div class="full-img" id="fullImgBox">
+                    <img src="/media/images/black.jpg" id="fullImg" alt="img">
+                    <span onclick="closeImg()">X</span>
+                </div>
+
+                    <h1>Galería</h1>
+                
+                <div class="img-galery">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                    <img src="/media/images/black.jpg" onclick="openFullImg(this.src)" alt="img">
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="contenido3-about sections">
+                <div class="titulo">
+                    <p>Por una universidad crítica, creadora, transformadora, antipatriarcal y diversa✊🏽🔥</p>
+                    <p>¡25 años de lucha por la educación!</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="contenido4-redes sections" id="redes">
+
+                <div class="contenido4">
+                    <p>...</p>
+                </div>
+
+                <div class="red-social">
+                    <h2>Instagram</h2>
+                    <blockquote class="instagram-media" data-instgrm-version="7" >
+                        <a href="https://www.instagram.com/p/ClO0xqBrMcZ/?img_index=1"></a> 
+                        </blockquote>
+                        <script async defer src="//platform.instagram.com/es_ES/embeds.js"></script>
+                </div>
+            </div>
+
+        </div>
+
+
+            <footer class="footer">
+                <div class="grupo1">
+                    <div class="box">
+                        <figure>
+                            <a href="#inicio" class="desplazar">
+                                <img class="logo" src="media/images/logo/logo-aceu.jpeg" alt="logo">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="box"> 
+                        <h2>SOBRE NOSOTROS</h2>
+                        <P>La <b>ACEU</b>, Asociación Colombiana de Estudiantes Universitarios, es una Organización Gremial de los Estudiantes Universitarios Colombianos, que se caracteriza por ser democrática, pluralista, humanista y académica, sin ánimo de lucro y de identidad común, que trabaja en pro de sus afiliados y toda la comunidad. Está abierta a todos los Estudiantes Universitarios que deseen y acepten voluntariamente los principios, objetivos y plataforma del mismo.</P>
+                    </div>
+                    <div class="box">
+                        <h2>SIGUENOS</h2>
+                        <div class="red-social">
+                            <a href="https://www.instagram.com/aceu.colombia/" class="fa fa-instagram" target="_blank"></a>
+                            <a href="https://web.facebook.com/ACEUNacional" class="fa fa-facebook" target="_blank"></a>
+                            <a href="https://twitter.com/ACEU_Colombia" class="fa fa-twitter" target="_blank"></a>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>ACEU</b> - Todos los Derechos Reservados. </small>
+                </div>
+            </footer>
+
+        <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root {
+    --blanco: #fff;
+    --blanco2: #e5e5e5;
+    --blanco3: #bebebe;
+    --negro: #000;
+    --azul-Oscuro: #0a141d;
+    --azul-oscuro2: #0d2033;
+    --aqua: aqua;
+}
+
+.contenido1 {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
+    background-image: url(/media/fondos/fondo2.jpg);
+    background-attachment: fixed;
+}
+
+.contenido1 .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido1 h1 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.674);
+    border-radius: 10px;
+    padding: 20px 0;
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+@media(max-width:824px) {
+
+    nav {
+        display: flex;
+    }
+}
